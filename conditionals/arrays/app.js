@@ -88,15 +88,21 @@
 //synatx : arr.splice(start ,delete count ,item ti insert);
 //example: 
 //delete indigo from colors:
-let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-console.log(colors);
-colors.splice(5,1);
-console.log(colors)
-colors.splice(5,1,'purple');
-console.log(colors)
-//add between red and orange and no deleting item
-colors.splice(1,0,'red-orange');
-console.log(colors);
-colors.splice(4,0,'light-green','lemon');
-console.log(colors);
+// let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// console.log(colors);
+// colors.splice(5,1);
+// console.log(colors)
+// colors.splice(5,1,'purple');
+// console.log(colors)
+// //add between red and orange and no deleting item
+// colors.splice(1,0,'red-orange');
+// console.log(colors);
+// colors.splice(4,0,'light-green','lemon');
+// console.log(colors);
+
+
+//7.sort method
+// let scores = [1,4,2,66,44];
+// console.log(scores.sort());//return [1, 2, 4, 44, 66]
+
 
