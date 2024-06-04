@@ -119,3 +119,28 @@ if (guess === 'exit') {
     console.log('CONGRATS!!!');
     console.log(`Numer of guess is ${attemptGuessNumbers}`)
 }
+
+// let maximum = parseInt(prompt('What is your maximum number?'));
+// while(!maximum) {
+//     maximum = prompt('Just write a number PLZZZZ?');
+// };
+
+// let random = Math.floor(Math.random() * maximum) + 1;
+// console.log(random)
+
+// let guess = prompt(`Guess The Random Number(1 - ${maximum} )`);
+// console.log('GUESS : ',guess);
+
+// while(parseInt(guess !== random)){
+//     if(guess === 'q') break;
+//     if(guess > random) {
+//         guess = prompt('Your guess is higher than random')
+//     } else {
+//         guess = prompt('Your Guess Is Less Than Random!!')
+//     }
+// }
+// if(guess === 'q') {
+//     console.log('You Left The Game')
+// } else {
+//     console.log('YOY WIN!!!!')
+// }
