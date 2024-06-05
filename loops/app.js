@@ -106,11 +106,17 @@ let guess = prompt('Enter Guess!!');
 let attemptGuessNumbers = 1;
 while (parseInt(guess) !== randomNum){
     if (guess === 'exit') break;
-    attemptGuessNumbers++
+    guess = parseInt(guess)
     if (guess > randomNum){
         guess = prompt('High')
-    } else {
+         attemptGuessNumbers++
+
+    } else if (guess < randomNum){
         guess = prompt('LOW')
+         attemptGuessNumbers++
+
+    } else {
+        guess = prompt('Invalid guess. Please enter number or type(exit)')
     }
 }
 if (guess === 'exit') {
