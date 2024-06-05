@@ -95,58 +95,127 @@
 //     console.log(userKeys)
 // }
 
-let max = parseInt(prompt('Enter Your MAX Number?!!!'));
-while(!max) {
-    max = parseInt(prompt('Enter Valid Number!!!'))
-}
-let randomNum = Math.floor(Math.random() * max + 1);
-console.log(`RANDOM IS ${randomNum}`);
+// let max = parseInt(prompt('Enter Your MAX Number?!!!'));
+// while(!max) {
+//     max = parseInt(prompt('Enter Valid Number!!!'))
+// }
+// let randomNum = Math.floor(Math.random() * max + 1);
+// console.log(`RANDOM IS ${randomNum}`);
 
-let guess = prompt('Enter Guess!!');
-let attemptGuessNumbers = 1;
-while (parseInt(guess) !== randomNum){
-    if (guess === 'exit') break;
-    guess = parseInt(guess)
-    if (guess > randomNum){
-        guess = prompt('High')
-         attemptGuessNumbers++
+// let guess = prompt('Enter Guess!!');
+// let attemptGuessNumbers = 1;
+// while (parseInt(guess) !== randomNum){
+//     if (guess === 'exit') break;
+//     guess = parseInt(guess)
+//     if (guess > randomNum){
+//         guess = prompt('High')
+//          attemptGuessNumbers++
 
-    } else if (guess < randomNum){
-        guess = prompt('LOW')
-         attemptGuessNumbers++
+//     } else if (guess < randomNum){
+//         guess = prompt('LOW')
+//          attemptGuessNumbers++
 
-    } else {
-        guess = prompt('Invalid guess. Please enter number or type(exit)')
-    }
-}
-if (guess === 'exit') {
-    console.log('you ExItEd')
-} else {
-    console.log('CONGRATS!!!');
-    console.log(`Numer of guess is ${attemptGuessNumbers}`)
-}
-
-// let maximum = parseInt(prompt('What is your maximum number?'));
-// while(!maximum) {
-//     maximum = prompt('Just write a number PLZZZZ?');
-// };
-
-// let random = Math.floor(Math.random() * maximum) + 1;
-// console.log(random)
-
-// let guess = prompt(`Guess The Random Number(1 - ${maximum} )`);
-// console.log('GUESS : ',guess);
-
-// while(parseInt(guess !== random)){
-//     if(guess === 'q') break;
-//     if(guess > random) {
-//         guess = prompt('Your guess is higher than random')
 //     } else {
-//         guess = prompt('Your Guess Is Less Than Random!!')
+//         guess = prompt('Invalid guess. Please enter number or type(exit)')
 //     }
 // }
-// if(guess === 'q') {
-//     console.log('You Left The Game')
+// if (guess === 'exit') {
+//     console.log('you ExItEd')
 // } else {
-//     console.log('YOY WIN!!!!')
+//     console.log('CONGRATS!!!');
+//     console.log(`Numer of guess is ${attemptGuessNumbers}`)
+// }
+
+//FOR OF LOOP
+
+// const colors = ['RED', 'BLUE', 'GREEN', 'PURPLE'];
+// for(let i = 0; i < colors.length; i++) {
+//     console.log(colors[i])
+// }
+// //or
+// for(let color of colors){
+//     console.log(`visit colors.com/${color}`)
+// }
+
+// let seatinChart = [
+//     ['Payam', 'Shara', 'Omid'],
+//     ['Shawn', 'Jim', 'Kim'],
+//     ['Alex', 'Rebeca', 'Anita', 'Sara']
+// ];
+// for(let i = 0; i < seatinChart.length; i++) {
+//     // console.log(seatinChart[i])
+//     for(let j = 0; j < seatinChart[i].length; j++) {
+//         console.log(seatinChart[i][j])
+//     }
+// }
+//or
+// for (let seats of seatinChart){
+//     // console.log(seats);
+//     for(let seat of seats) {
+//         console.log(seat)
+//     }
+// }
+
+// //example for string
+// for(let char of 'PAYAM') {
+//     console.log(char)
+// }
+// const numbers = [1,2,3,4,5,6,7,8,9]; 
+// for(let num of numbers){
+//     let square = num * num
+//     console.log(square)
+// }
+// /////////////// Iterating around *OBJECT*
+
+// const testScores =  {
+//     payam: 98,
+//     ali: 32,
+//     omid: 100,
+//     shara: 12,
+//     hassan: 9
+// };
+// for (let person in testScores){
+//     console.log(`${person} score is : ${testScores[person]}`)
+// }
+
+////////OBJECT METHODS
+// let keys = Object.keys(testScores);
+// console.log(keys) //returns : ['payam', 'ali', 'omid', 'shara', 'hassan']
+
+
+// let val = Object.values(testScores);
+// console.log(val)  //returns : [98, 32, 100, 12, 9]
+
+
+// let enteries = Object.entries(testScores);
+// console.log(enteries); 
+//returns : 
+// 0
+// : 
+// (2) ['payam', 98]
+// 1
+// : 
+// (2) ['ali', 32]
+// 2
+// : 
+// (2) ['omid', 100]
+// 3
+// : 
+// (2) ['shara', 12]
+// 4
+// : 
+// (2) ['hassan', 9]
+
+//example : 
+// const testScores =  {
+//     payam: 98,
+//     ali: 32,
+//     omid: 100,
+//     shara: 12,
+//     hassan: 9
+// };
+// let keys = Object.keys(testScores);
+// console.log(keys)  //['payam', 'ali', 'omid', 'shara', 'hassan']
+// for(let key of keys){
+//     console.log(key)
 // }
