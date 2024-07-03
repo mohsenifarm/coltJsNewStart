@@ -1,11 +1,21 @@
 let button = document.querySelector('button');
 button.addEventListener('click', (event) => {
     console.log(event.target.className)
+    p.append(arr.join(' / '))
 })
 let inp = document.querySelector('input');
-inp.addEventListener('click',function(evt){
-    console.log(evt.target.value)
+let p = document.querySelector('p');
+let arr = []
+inp.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Enter') {
+        console.log(evt.target.value)
+        arr.push(evt.target.value)
+        evt.target.value = ''
+        console.log(arr)
+
+    }
 })
+
 // inp.addEventListener('keydown', function (e) {
 //     // console.log(e)
 //     // console.log(e.key)
